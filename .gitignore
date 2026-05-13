@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.log
+*.pid
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+venv/
+models/artifacts/trainer_runs/
+models/artifacts/transformers/*/model.safetensors
+Output/
+whatsapp_dataset_for_kaggle.zip

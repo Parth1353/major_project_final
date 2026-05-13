@@ -1,0 +1,8 @@
+{
+  "alias": "punjabi_bert",
+  "source_model_id": "l3cube-pune/punjabi-bert",
+  "max_length": 128,
+  "epochs": 3,
+  "learning_rate": 2e-05,
+  "batch_size": 16
+}

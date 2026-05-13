@@ -1,0 +1,27 @@
+services:
+  backend:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      WHATSAPP_MODEL_DIR: /app/models/artifacts
+      WHATSAPP_LOAD_TRANSFORMERS: "0"
+      WHATSAPP_ENABLE_STANCE_MODEL: "0"
+      WHATSAPP_FAKE_THRESHOLD: "0.5"
+    command: >
+      sh -c "apt-get update &&
+             apt-get install -y --no-install-recommends build-essential libgomp1 &&
+             pip install --no-cache-dir -r requirements.txt &&
+             uvicorn backend.app:app --host 0.0.0.0 --port 8000"
+    ports:
+      - "8000:8000"
+
+  frontend:
+    image: nginx:1.27-alpine
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

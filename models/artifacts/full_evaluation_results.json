@@ -1,0 +1,332 @@
+{
+  "logistic_regression": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          1410,
+          7
+        ],
+        [
+          13,
+          1471
+        ]
+      ],
+      "TN": 1410,
+      "FP": 7,
+      "FN": 13,
+      "TP": 1471
+    },
+    "accuracy": 0.9931058255773871,
+    "per_class": {
+      "REAL": {
+        "precision": 0.9908643710470836,
+        "recall": 0.995059985885674,
+        "f1_score": 0.9929577464788732,
+        "support": 1417
+      },
+      "FAKE": {
+        "precision": 0.9952638700947226,
+        "recall": 0.9912398921832885,
+        "f1_score": 0.9932478055367995,
+        "support": 1484
+      }
+    },
+    "macro_avg": {
+      "precision": 0.9930641205709031,
+      "recall": 0.9931499390344812,
+      "f1_score": 0.9931027760078364
+    },
+    "weighted_avg": {
+      "precision": 0.9931149248515291,
+      "recall": 0.9931058255773871,
+      "f1_score": 0.993106125535048
+    },
+    "specificity": 0.995059985885674,
+    "mcc": 0.9862140558715049,
+    "cohen_kappa": 0.9862056110495862,
+    "roc_auc": 0.9996908924553031,
+    "log_loss": 0.08905856486495205,
+    "error_counts": {
+      "false_positives": 7,
+      "false_negatives": 13,
+      "total_errors": 20
+    },
+    "threshold": 0.5,
+    "total_samples": 2901
+  },
+  "muril": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          1417,
+          0
+        ],
+        [
+          0,
+          1484
+        ]
+      ],
+      "TN": 1417,
+      "FP": 0,
+      "FN": 0,
+      "TP": 1484
+    },
+    "accuracy": 1.0,
+    "per_class": {
+      "REAL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1417
+      },
+      "FAKE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1484
+      }
+    },
+    "macro_avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "weighted_avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "specificity": 1.0,
+    "mcc": 1.0,
+    "cohen_kappa": 1.0,
+    "roc_auc": 1.0,
+    "log_loss": 0.004380992998996047,
+    "error_counts": {
+      "false_positives": 0,
+      "false_negatives": 0,
+      "total_errors": 0
+    },
+    "threshold": 0.5,
+    "total_samples": 2901
+  },
+  "naive_bayes": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          1329,
+          88
+        ],
+        [
+          14,
+          1470
+        ]
+      ],
+      "TN": 1329,
+      "FP": 88,
+      "FN": 14,
+      "TP": 1470
+    },
+    "accuracy": 0.9648397104446742,
+    "per_class": {
+      "REAL": {
+        "precision": 0.9895755770662695,
+        "recall": 0.9378969654199012,
+        "f1_score": 0.9630434782608696,
+        "support": 1417
+      },
+      "FAKE": {
+        "precision": 0.9435173299101413,
+        "recall": 0.9905660377358491,
+        "f1_score": 0.9664694280078896,
+        "support": 1484
+      }
+    },
+    "macro_avg": {
+      "precision": 0.9665464534882053,
+      "recall": 0.9642315015778751,
+      "f1_score": 0.9647564531343795
+    },
+    "weighted_avg": {
+      "precision": 0.9660145847258026,
+      "recall": 0.9648397104446742,
+      "f1_score": 0.9647960151187039
+    },
+    "specificity": 0.9378969654199012,
+    "mcc": 0.9307750762856983,
+    "cohen_kappa": 0.929558849505487,
+    "roc_auc": 0.9972099477465585,
+    "log_loss": 0.2680922266929529,
+    "error_counts": {
+      "false_positives": 88,
+      "false_negatives": 14,
+      "total_errors": 102
+    },
+    "threshold": 0.5,
+    "total_samples": 2901
+  },
+  "punjabi_bert": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          1417,
+          0
+        ],
+        [
+          0,
+          1484
+        ]
+      ],
+      "TN": 1417,
+      "FP": 0,
+      "FN": 0,
+      "TP": 1484
+    },
+    "accuracy": 1.0,
+    "per_class": {
+      "REAL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1417
+      },
+      "FAKE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1484
+      }
+    },
+    "macro_avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "weighted_avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "specificity": 1.0,
+    "mcc": 1.0,
+    "cohen_kappa": 1.0,
+    "roc_auc": 1.0,
+    "log_loss": 0.0036186993760369793,
+    "error_counts": {
+      "false_positives": 0,
+      "false_negatives": 0,
+      "total_errors": 0
+    },
+    "threshold": 0.5,
+    "total_samples": 2901
+  },
+  "stacking_ensemble": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          1417,
+          0
+        ],
+        [
+          0,
+          1484
+        ]
+      ],
+      "TN": 1417,
+      "FP": 0,
+      "FN": 0,
+      "TP": 1484
+    },
+    "accuracy": 1.0,
+    "per_class": {
+      "REAL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1417
+      },
+      "FAKE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 1484
+      }
+    },
+    "macro_avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "weighted_avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "specificity": 1.0,
+    "mcc": 1.0,
+    "cohen_kappa": 1.0,
+    "roc_auc": 1.0,
+    "log_loss": 0.000758258156689673,
+    "error_counts": {
+      "false_positives": 0,
+      "false_negatives": 0,
+      "total_errors": 0
+    },
+    "threshold": 0.5,
+    "total_samples": 2901
+  },
+  "xgboost": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          1416,
+          1
+        ],
+        [
+          0,
+          1484
+        ]
+      ],
+      "TN": 1416,
+      "FP": 1,
+      "FN": 0,
+      "TP": 1484
+    },
+    "accuracy": 0.9996552912788693,
+    "per_class": {
+      "REAL": {
+        "precision": 1.0,
+        "recall": 0.9992942836979535,
+        "f1_score": 0.9996470172961525,
+        "support": 1417
+      },
+      "FAKE": {
+        "precision": 0.9993265993265993,
+        "recall": 1.0,
+        "f1_score": 0.9996631862579993,
+        "support": 1484
+      }
+    },
+    "macro_avg": {
+      "precision": 0.9996632996632997,
+      "recall": 0.9996471418489767,
+      "f1_score": 0.9996551017770758
+    },
+    "weighted_avg": {
+      "precision": 0.9996555234059543,
+      "recall": 0.9996552912788693,
+      "f1_score": 0.9996552884920782
+    },
+    "specificity": 0.9992942836979535,
+    "mcc": 0.9993104413816488,
+    "cohen_kappa": 0.9993102036361613,
+    "roc_auc": 1.0,
+    "log_loss": 0.0006078757939541913,
+    "error_counts": {
+      "false_positives": 1,
+      "false_negatives": 0,
+      "total_errors": 1
+    },
+    "threshold": 0.5,
+    "total_samples": 2901
+  }
+}

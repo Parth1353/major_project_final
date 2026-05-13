@@ -1,0 +1,112 @@
+{
+  "logistic_regression": {
+    "accuracy": 0.9931058255773871,
+    "precision_macro": 0.9930641205709031,
+    "recall_macro": 0.9931499390344812,
+    "f1_macro": 0.9931027760078364,
+    "confusion_matrix": [
+      [
+        1410,
+        7
+      ],
+      [
+        13,
+        1471
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "naive_bayes": {
+    "accuracy": 0.9648397104446742,
+    "precision_macro": 0.9665464534882053,
+    "recall_macro": 0.9642315015778751,
+    "f1_macro": 0.9647564531343795,
+    "confusion_matrix": [
+      [
+        1329,
+        88
+      ],
+      [
+        14,
+        1470
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "xgboost": {
+    "accuracy": 0.9996552912788693,
+    "precision_macro": 0.9996632996632997,
+    "recall_macro": 0.9996471418489767,
+    "f1_macro": 0.9996551017770758,
+    "confusion_matrix": [
+      [
+        1416,
+        1
+      ],
+      [
+        0,
+        1484
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "indic_bert__ai4bharat/indic-bert__error": {
+    "error": "OSError('You are trying to access a gated repo.\\nMake sure to have access to it at https://huggingface.co/ai4bharat/indic-bert.\\n401 Client Error. (Request ID: Root=1-6a024c38-0992fd216187093623e5c022;024ca81f-1dec-45c3-8b5c-a50edfb952c5)\\n\\nCannot access gated repo for url https://huggingface.co/ai4bharat/indic-bert/resolve/main/config.json.\\nAccess to model ai4bharat/indic-bert is restricted. You must have access to it and be authenticated to access it. Please log in.')"
+  },
+  "punjabi_bert__neuralspace-reverie/indic-transformers-pa-bert__error": {
+    "error": "OSError(\"neuralspace-reverie/indic-transformers-pa-bert is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`\")"
+  },
+  "punjabi_bert": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "confusion_matrix": [
+      [
+        1417,
+        0
+      ],
+      [
+        0,
+        1484
+      ]
+    ],
+    "threshold": 0.5,
+    "source_model_id": "l3cube-pune/punjabi-bert"
+  },
+  "muril": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "confusion_matrix": [
+      [
+        1417,
+        0
+      ],
+      [
+        0,
+        1484
+      ]
+    ],
+    "threshold": 0.5,
+    "source_model_id": "google/muril-base-cased"
+  },
+  "stacking_ensemble": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "confusion_matrix": [
+      [
+        1417,
+        0
+      ],
+      [
+        0,
+        1484
+      ]
+    ],
+    "threshold": 0.5
+  }
+}

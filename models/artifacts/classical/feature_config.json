@@ -1,0 +1,11 @@
+{
+  "metadata_features": [
+    "emoji_count",
+    "exclamation_count",
+    "text_length",
+    "forwarded_flag",
+    "share_words",
+    "caps_ratio",
+    "sentiment_score"
+  ]
+}

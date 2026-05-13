@@ -1,0 +1,8 @@
+{
+  "alias": "muril",
+  "source_model_id": "google/muril-base-cased",
+  "max_length": 128,
+  "epochs": 3,
+  "learning_rate": 2e-05,
+  "batch_size": 16
+}
