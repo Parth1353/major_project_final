@@ -119,6 +119,7 @@ WHATSAPP_FAKE_THRESHOLD=0.5
 ```
 
 The deployment uses the lightweight classical artifacts committed to GitHub. Full MuRIL/Punjabi transformer `.safetensors` files are not committed because they are too large for normal GitHub deployment.
+The Dockerfile uses `requirements-deploy.txt`, which excludes training/GPU dependencies for a smaller production image.
 
 ## API
 
