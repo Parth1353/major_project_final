@@ -10,6 +10,8 @@ import joblib
 import numpy as np
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from scipy import sparse
 
@@ -279,3 +281,16 @@ def model_compare() -> dict[str, Any]:
     if not service.model_comparison:
         raise HTTPException(status_code=404, detail="model_comparison.json not found")
     return service.model_comparison
+
+
+FRONTEND_DIR = PROJECT_ROOT / "frontend"
+if FRONTEND_DIR.exists():
+    app.mount("/static", StaticFiles(directory=FRONTEND_DIR), name="static")
+
+
+@app.get("/", include_in_schema=False)
+def frontend_index() -> FileResponse:
+    index_path = FRONTEND_DIR / "index.html"
+    if not index_path.exists():
+        raise HTTPException(status_code=404, detail="frontend/index.html not found")
+    return FileResponse(index_path)

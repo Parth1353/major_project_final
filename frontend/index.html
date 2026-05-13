@@ -357,7 +357,11 @@
   </main>
 
   <script>
-    const API_BASE = localStorage.getItem('apiBase') || 'http://localhost:8000';
+    const API_BASE = localStorage.getItem('apiBase') || (
+      window.location.protocol.startsWith('http') && window.location.port !== '3000'
+        ? window.location.origin
+        : 'http://localhost:8000'
+    );
     const message = document.getElementById('message');
     const charCounter = document.getElementById('charCounter');
     const clearBtn = document.getElementById('clearBtn');
@@ -497,4 +501,3 @@
   </script>
 </body>
 </html>
-

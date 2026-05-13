@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: major-project-final
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: WHATSAPP_LOAD_TRANSFORMERS
+        value: "0"
+      - key: WHATSAPP_ENABLE_STANCE_MODEL
+        value: "0"
+      - key: WHATSAPP_FAKE_THRESHOLD
+        value: "0.5"

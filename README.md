@@ -97,6 +97,29 @@ Services:
 
 The Compose file mounts the project directory into the backend container and serves `frontend/index.html` through nginx.
 
+## Public Deployment
+
+The app can deploy as one Docker web service. FastAPI serves both the API and the frontend at the same public URL.
+
+Render setup:
+
+1. Push this repo to GitHub.
+2. Open Render and create a new Web Service from `Parth1353/major_project_final`.
+3. Choose Docker runtime.
+4. Keep the default Dockerfile.
+5. Set health check path to `/health`.
+6. Deploy.
+
+Runtime defaults:
+
+```text
+WHATSAPP_LOAD_TRANSFORMERS=0
+WHATSAPP_ENABLE_STANCE_MODEL=0
+WHATSAPP_FAKE_THRESHOLD=0.5
+```
+
+The deployment uses the lightweight classical artifacts committed to GitHub. Full MuRIL/Punjabi transformer `.safetensors` files are not committed because they are too large for normal GitHub deployment.
+
 ## API
 
 ### `GET /health`
